@@ -27,7 +27,7 @@
 
 
     <script>
-        var myEmployees = [ 
+        var myEmployees = `[ 
             { "id" : "1234",
                 "firstName" : "John",
                 "lastName" : "Hope",
@@ -98,26 +98,27 @@
                 "jobTitle" : "null",
                 "salary" : "3345"
             }
-        ]
+        ]`;
+        var myEmployees = JSON.parse(myEmployees);
 
-        buildTable(myEmployees)
+        // buildTable(myEmployees)
 
-        fuction buildTable(data) {
+        
+        // function buildTable (data) {
             var table = document.getElementById("myTable")
-
-            for (var i = 0; i < data.length; i++){
-                var row = `<tr>
-                                <td>${data[i].id}</td>
-                                <td>${data[i].firstName}</td>
-                                <td>${data[i].secondName}</td>
-                                <td>${data[i].emailAddress}</td>
-                                <td>${data[i].jobTitle}</td>
-                                <td>${data[i].salary}</td>
-                            </tr>`
-                table.innerHTML += row
+        for (var i = 0; i < myEmployees.length; i++){
+                table.innerHTML += `<tr>
+                                <td>${myEmployees[i].id}</td>
+                                <td>${myEmployees[i].firstName}</td>
+                                <td>${myEmployees[i].lastName}</td>
+                                <td>${myEmployees[i].emailAddress}</td>
+                                <td>${myEmployees[i].jobTitle}</td>
+                                <td>${myEmployees[i].salary}</td>
+                            </tr>`;
+                // table.innerHTML += row
 
             }
-        }
+       // }
 
 
 
