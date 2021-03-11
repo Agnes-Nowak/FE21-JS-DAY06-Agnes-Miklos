@@ -25,7 +25,7 @@
     </table>
 
 
-
+    
     <script>
         var myEmployees = [ 
             { "id" : "1234",
@@ -102,7 +102,7 @@
 
         buildTable(myEmployees)
 
-        fuction buildTable(data) {
+        function buildTable(data) {
             var table = document.getElementById("myTable")
 
             for (var i = 0; i < data.length; i++){
@@ -114,7 +114,7 @@
                                 <td>${data[i].jobTitle}</td>
                                 <td>${data[i].salary}</td>
                             </tr>`
-                table.innerHTML += row
+                table.innerHTML += row;
 
             }
         }
