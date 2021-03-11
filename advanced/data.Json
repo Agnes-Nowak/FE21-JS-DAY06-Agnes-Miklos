@@ -1,0 +1,167 @@
+let employees = `
+
+  [{
+
+      "Unique ID": "29893944817",
+
+      "firstName": "Patrik",
+      
+      "lastName": "Jonathan",
+
+      "email": "email",
+
+      "jobTitle" : "Developer",
+
+        "Salary" : "1943"
+
+
+  }, {
+    
+
+      "Unique ID": "29893944123",
+
+      "firstName": "Susan",
+      
+      "lastName": "Doe",
+
+      "email": "email",
+
+      "jobTitle" : "Developer",
+
+        "Salary" : "3219"
+
+
+  }
+  , {
+    
+
+      "Unique ID": "29893944817",
+
+      "firstName": "John",
+      
+      "lastName": "Smith",
+
+      "email": "email",
+
+      "jobTitle" : "Developer",
+
+        "Salary" : "2941"
+    
+  }
+  , {
+    
+
+      "Unique ID": "29893944817",
+
+      "firstName": "Denis",
+      
+      "lastName": "Frog",
+
+      "email": "email",
+
+      "jobTitle" : "Developer",
+
+        "Salary" : "5214"
+
+
+  }
+  , {
+    
+
+      "Unique ID": "29893944817",
+
+      "firstName": "Leon",
+      
+      "lastName": "Brown",
+
+      "email": "email",
+
+      "jobTitle" : "Developer",
+
+        "Salary" : "2156"
+
+
+  }
+  , {
+    
+
+      "Unique ID": "29893944817",
+
+      "firstName": "Ann",
+      
+      "lastName": "Bukowski",
+
+      "email": "email",
+
+      "jobTitle" : "Menager",
+
+        "Salary" : "11251"
+  }
+  , {
+    
+
+      "Unique ID": "29893944817",
+
+      "firstName": "Lukas",
+      
+      "lastName": "Lenin",
+
+      "email": "email",
+
+      "jobTitle" : "Developer",
+
+        "Salary" : "2141"
+
+  }
+  , {
+    
+
+      "Unique ID": "29893944817",
+
+      "firstName": "Fred",
+      
+      "lastName": "Table",
+
+      "email": "email",
+
+      "jobTitle" : "Developer",
+
+        "Salary" : "3215"
+
+  }
+  , {
+    
+
+      "Unique ID": "29893944817",
+
+      "firstName": "Kimberly",
+      
+      "lastName": "Poppy",
+
+      "email": "email",
+
+      "jobTitle" : "Developer",
+
+        "Salary" : "2101"
+
+  }
+  , {
+    
+
+      "Unique ID": "29893944817",
+
+      "firstName": "Max",
+      
+      "lastName": "King",
+
+      "email": "email",
+
+      "jobTitle" : "Developer",
+
+        "Salary" : "1241"
+
+  }
+
+  ]
+
+`
