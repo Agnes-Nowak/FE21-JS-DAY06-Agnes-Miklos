@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <table class="table bg-light">
+        <thead>
+            <tr>
+                <th>Unique ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email address</th>
+                <th>Job Title</th>
+                <th>Salary</th>
+            </tr>
+        </thead> 
+        <tbody id="myTable">
+
+        </tbody>
+    </table>
+
+
+
+    <script>
+        var myEmployees = [ 
+            { "id" : "1234",
+                "firstName" : "John",
+                "lastName" : "Hope",
+                "emailAddress" : "johnh@gmail.com",
+                "jobTitle" : "Manager",
+                "salary" : "12432"
+            },
+            { "id" : "1235",
+                "firstName" : "Ann",
+                "lastName" : "Sunrise",
+                "emailAddress" : "ann_sunrise@gmail.com",
+                "jobTitle" : "PA",
+                "salary" : "4642"
+            },
+            { "id" : "1236",
+                "firstName" : "Margaret",
+                "lastName" : "Tulip",
+                "emailAddress" : "mtulip@gmail.com",
+                "jobTitle" : "Secretary",
+                "salary" : "2160"
+            },
+            { "id" : "1237",
+                "firstName" : "Thomas",
+                "lastName" : "Smith",
+                "emailAddress" : "smith_th@gmail.com",
+                "jobTitle" : "Tech Support",
+                "salary" : "3200"
+            },
+            { "id" : "1238",
+                "firstName" : "Paul",
+                "lastName" : "Misery",
+                "emailAddress" : "misery@gmail.com",
+                "jobTitle" : "Misery bringer",
+                "salary" : "1202"
+            },
+            { "id" : "1239",
+                "firstName" : "Suzanne",
+                "lastName" : "Wind",
+                "emailAddress" : "s.windh@gmail.com",
+                "jobTitle" : "IT specialist",
+                "salary" : "8765"
+            },
+            { "id" : "1235",
+                "firstName" : "Jessica",
+                "lastName" : "Frog",
+                "emailAddress" : "frogj@gmail.com",
+                "jobTitle" : "null",
+                "salary" : "2002"
+            },
+            { "id" : "12351",
+                "firstName" : "Ian",
+                "lastName" : "Fire",
+                "emailAddress" : "ian_fire@gmail.com",
+                "jobTitle" : "null",
+                "salary" : "2832"
+            },
+            { "id" : "12352",
+                "firstName" : "Theodore",
+                "lastName" : "Rose",
+                "emailAddress" : "t.rose@gmail.com",
+                "jobTitle" : "null",
+                "salary" : "2965"
+            },
+            { "id" : "12353",
+                "firstName" : "Elisabeth",
+                "lastName" : "Frootloop",
+                "emailAddress" : "eli_froot@gmail.com",
+                "jobTitle" : "null",
+                "salary" : "3345"
+            }
+        ]
+
+        buildTable(myEmployees)
+
+        fuction buildTable(data) {
+            var table = document.getElementById("myTable")
+
+            for (var i = 0; i < data.length; i++){
+                var row = `<tr>
+                                <td>${data[i].id}</td>
+                                <td>${data[i].firstName}</td>
+                                <td>${data[i].secondName}</td>
+                                <td>${data[i].emailAddress}</td>
+                                <td>${data[i].jobTitle}</td>
+                                <td>${data[i].salary}</td>
+                            </tr>`
+                table.innerHTML += row
+
+            }
+        }
+
+
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
