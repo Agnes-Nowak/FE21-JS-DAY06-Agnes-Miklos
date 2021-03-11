@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result"></div>
+    <!-- Basic
+Based on the following two Objects definitions:
+
+var sandwiches = `{ "sandwich": "hamburger", "calories": "260" }`;
+var fries = `{ "fries_size": "Large French Fries", "calories": "570" }`;
+print the following message within the browser: My favorite sandwich is a Hamburger which has approximately 260 calories, along with it I enjoy eating Large French Fries which have about 570 calories. -->
+
+    <script>
+    
+
+
+        let  object1 = `{ 
+            "sandwich": "hamburger", 
+            "calories": "260" 
+        }`;
+
+        let object2 = `{ 
+            "fries_size": "Large French Fries", 
+            "calories": "570" 
+        }`;
+
+        let tomato1 = JSON.parse(object1);
+        let tomato2 = JSON.parse(object2);
+
+
+        document.getElementById("result").innerHTML = "My favourite sandwich is " + tomato1.sandwich + " which has approximately " + tomato1.calories + " calories, along with it I enjoy eating " + tomato2.fries_size + " which have about " + tomato2.calories + " calories."
+    </script>
+</body>
+</html>
